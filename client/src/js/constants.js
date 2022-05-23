@@ -20,6 +20,16 @@ const KEY = {
   PAUSE: 'KeyP',
 };
 
+//난이도
+const LEVEL = {
+  0: 800,
+  1: 720,
+  2: 630,
+  3: 550,
+  4: 470,
+  5: 390
+}
+
 //점수
 const POINTS = {
   SINGLE: 100,
@@ -95,3 +105,4 @@ Object.freeze(KEY);
 Object.freeze(COLORS);
 Object.freeze(SHAPE);
 Object.freeze(POINTS);
+Object.freeze(LEVEL);

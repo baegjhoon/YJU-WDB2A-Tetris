@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./src/css/styles.css">
+	<title>Tetris</title>
+</head>
+
+<body>
+	<div class="container">
+		<!-- user data -->
+		<div id="greeting" class="greeting">
+			<form id="user-form">
+				<div class="mb-3">
+					<label for="user-input" class="form-label">User ID</label>
+					<input type="text" class="form-control" id="user-input">
+				</div>
+				<button type="submit" class="btn btn-primary">Enter</button>
+			</form>
+		</div>
+
+		<!-- game -->
+		<div id="main" class="main hide">
+			<div class="main__games">
+				<div class="grid">
+					<canvas id="board" class="game-board"></canvas>
+					<div class="right-column">
+						<div>
+							<h1>tetris</h1>
+							<p>Score: <span id="score"></span></p>
+							<p>Lines: <span id="lines"></span></p>
+							<p>Level: <span id="level"></span></p>
+							<p>Next Block <canvas id="next" class="next"></canvas></p>
+						</div>
+						<div>
+							<button id="ready-btn" onclick="ready()" class="ready-button btn">준비</button>
+							<button id="leave-btn" onclick="leave()" class="leave-button btn">나가기</button>
+						</div>
+					</div>
+				</div>
+				<div class="user-list-wrapper">
+					<h3>참가자</h3>
+					<ul id="user-list" class="user-list"></ul>
+				</div>
+			</div>
+			<!-- user-list -->
+			<div id="board-list" class="board-list"></div>
+		</div>
+	</div>
+	<!-- SRI Hash -->
+	<script src="https://cdn.socket.io/4.5.1/socket.io.min.js"
+		integrity="sha384-dZoVd6Ro98cGu3vTPJeEj0bVrpH2p/SgENb5iMjpBTSMobGNb6Fg+M5CJ2RHq+H2"
+		crossorigin="anonymous"></script>
+	<script src="./src/js/constants.js"></script>
+	<script src="./src/js/piece.js"></script>
+	<script src="./src/js/board.js"></script>
+	<script src="./src/js/main.js"></script>
+</body>
+
+</html>

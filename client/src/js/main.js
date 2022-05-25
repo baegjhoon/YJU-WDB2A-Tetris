@@ -358,7 +358,10 @@ function ready() {
 }
 
 function leave() {
-  if (account.status === STATUS.PLAYING) return;
+  if (account.status === STATUS.PLAYING) {
+    alert('게임 중에는 나가실 수 없습니다.');
+    return;
+  }
 
   setupGame();
   socket.emit('user-leave', {

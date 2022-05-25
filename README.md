@@ -21,26 +21,26 @@
 ---
 
 ## :pushpin: commit 규칙
-- init : 
-   ```
-   git commit -m "[init] Tetris 1.0"
-   ```
 - add : 기능 추가 시
    ```
    git commit -m "[add] 난이도 기능 추가"
-   ```
-- chore : 간단한 코드 수정, 오타 수정
-   ```
-   git commit -m "[chore] 오타 수정"
-   ```
-- update : 문서 업데이트 시
-   ```
-   git commit -m "[update] Readme.md OOO 추가"
    ```
 - fix : 버그 수정
    ```
    git commit -m "[fix] 블록이 회전하지 않던 문제 해결"
    ```
+- update : 문서 업데이트 시
+   ```
+   git commit -m "[update] Readme.md OOO 추가"
+   ```
+- deployment : 배포할 때 쓸 예정
+
+<!-- 사용 안함
+- chore : 간단한 코드 수정, 오타 수정
+   ```
+   git commit -m "[chore] 오타 수정"
+   ```
+-->
 
 ## :pushpin: PR 규칙
 - 

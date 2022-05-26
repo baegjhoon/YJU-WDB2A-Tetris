@@ -21,24 +21,28 @@
 ---
 
 ## :pushpin: commit 규칙
-- add : 기능 추가 시
+- [Add] : 기능 추가 시 :sparkles:
    ```
-   git commit -m "[add] 난이도 기능 추가"
+   git commit -m "[Add] 난이도 기능 추가"
    ```
-- fix : 버그 수정
+- [Fix] : 버그 수정 :bug:
    ```
-   git commit -m "[fix] 블록이 회전하지 않던 문제 해결"
+   git commit -m "[Fix] 블록이 회전하지 않던 문제 해결"
    ```
-- update : 문서 업데이트 시
+- [Update] : 문서 업데이트 시 :pencil2:
    ```
-   git commit -m "[update] Readme.md OOO 추가"
+   git commit -m "[Update] README.md OOO 추가"
    ```
-- deployment : 배포할 때 쓸 예정
+- [Design] : UI 디자인 변경 시 (CSS) :art:
+   ```
+   git commit -m "[Design] Readme.md OOO 추가"
+   ```
+- [Deployment] : 배포할 때 쓸 예정 :tada:
 
 <!-- 사용 안함
-- chore : 간단한 코드 수정, 오타 수정
+- Chore : 간단한 코드 수정, 오타 수정
    ```
-   git commit -m "[chore] 오타 수정"
+   git commit -m "[Chore] 오타 수정"
    ```
 -->
 

@@ -22,6 +22,21 @@
 
 ---
 
+# 🔍 목차  
+[1. Github 관리 전략 ](#github-관리-전략)  
+  > [1.1. Commit Convention ](#pushpin-commit-convention)  
+    [1.2. 개인 작업 진행 순서 ](#개인-작업-진행-순서)  
+    [1.3. Issue 작성법 ](#issue-작성법)  
+    [1.4. Issue Convention ](#pushpin-issue-convention)  
+    [1.5. Projects 탭 활용 ](#projects-탭-활용)  
+    [1.6. git Branch 전략 ](#git-branch-전략)  
+    [1.7. Issue 번호를 태깅하여 Branch 생성 ](#issue-번호를-태깅하여-branch-생성)  
+    [1.8. PR Convention (작성예정)](#pushpin-pr-규칙-작성-예정)  
+    
+[2. TETRIS : 테트리스 ](#tetris-테트리스)  
+
+<br>  
+
 # Github 관리 전략
 
 ## :pushpin: Commit Convention
@@ -45,6 +60,7 @@ Deployment | 배포할 때 쓸 예정 :tada: | -
 
 :fire: `main 브랜치`에서 수정하지 않도록 주의, **현재 브랜치를 확인**해주세요!  
 :fire: `clone 시`에도 `develop 브랜치`로 설정 --> URL을 복사해주세요!
+<br>  
 
 ## Issue 작성법
 - 누가 어떤 작업을 하고있는지를 파악하기 위해 issue를 작성합니다.
@@ -66,8 +82,20 @@ Deployment | 배포할 때 쓸 예정 :tada: | -
 - 해당 작업을 하며 참조한 문서의 URL 첨부
 ```
 3. issue 설정: `Assignees(작업자)`와 `Labels`을 설정합니다.
+<br>  
+
+## Projects 탭 활용  
+<img width="100%" src="https://user-images.githubusercontent.com/103083251/170812937-d22dee25-36e7-4f2a-8e10-f46039dbdf4a.png"/>  
+
+- `To do` : 할 일  
+- `In progress` : 진행 중인 일  
+- `Done` : 완료된 Issue  
   
-## Projects 탭 활용 (작성 예정)
+1. `+`를 눌러 `#이슈 번호`를 검색하여 Issue를 추가할 수 있습니다.  
+2. Issue를 추가하면 사진과 같은 `블록`이 생깁니다.  
+3. (스크래치 처럼) 마우스로 잡아서 해당하는 `작업 진행 영역`에 가져다 놓으면 됩니다.  
+4. `Issue 단위의 작업`을 완료했다면 Done에 놓아주세요!
+<br>  
 
 ## Git Branch 전략
 ```
@@ -95,8 +123,52 @@ git pull origin develop
 ```
 
 
-## :pushpin: PR 규칙
+## :pushpin: PR 규칙 (작성 예정)  
 - 
 
-## :pushpin: 참고사항
-- 
+<br>
+
+---
+
+# TETRIS : 테트리스  
+(테트리스 사진 첨부)  
+(설명 작성 예정)  
+
+<br>  
+
+## How to PLAY  
+(플레이 링크와 조작법 작성 예정)  
+
+<br>  
+
+## 패치 노트  
+(구현된 기능들을 차례대로 작성할 예정)
+
+<br>  
+
+## 스크린샷  
+(로그인 화면 & 플레이 화면 사진 첨부)  
+
+<br>  
+
+---
+
+# etc  
+
+## 팀원 역할  
+
+<br>  
+
+## 기술 스택  
+(js, css, node.js, heroku, 등등)  
+(js 채택 이유 기술할 예정 - 브레인스토밍과 연계하여 js 이점 작성)  
+
+<br>
+
+## 소스 코드  
+(각 파일들을 하이퍼링크로 작성할 예정)  
+
+<br>
+
+## Reference  
+(스터디에 참조한 글들의 링크 작성)  

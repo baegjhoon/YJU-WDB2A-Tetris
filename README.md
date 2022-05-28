@@ -1,5 +1,5 @@
 # YJU WDB2A반 1조 미니 프로젝트 :: Tetris
-#### 👋영진전문대학교 2학년 WD-A반 1조(hongzo) @ 첫번째 팀 프로젝트  
+#### 👋 영진전문대학교 2학년 WD-A반 1조(hongzo) @ 첫번째 팀 프로젝트  
 **테트리스 구현**을 목표로 만들어진 repository입니다. 더불어 **git/github 활용법에 대한 스터디**를 겸하고 있습니다.
 
 <br>
@@ -11,7 +11,7 @@
     </td>
     <td align="center"><a href=https://github.com/ooyniz><img src="https://user-images.githubusercontent.com/83005178/166416247-3908c2e9-ed1c-4e44-aa6a-68f3db0f45db.png" width="100px;" alt=""/><br /><sub><b>Kwak Yujin</b></sub></a><br />🏠
     </td>
-    <td align="center"><a href=https://github.com/baegjhoon><img src="https://user-images.githubusercontent.com/102000749/165739357-9ea66cf1-8a6e-4b9a-bf77-0a8c9e1a465a.png" width="100px;" alt=""/><br /><sub><b>Baeg Junghun</b></sub></a><br />🏠
+    <td align="center"><a href=https://github.com/baegjhoon><img src="https://user-images.githubusercontent.com/102000749/165739357-9ea66cf1-8a6e-4b9a-bf77-0a8c9e1a465a.png" width="100px;" alt=""/><br /><sub><b>Baeg Junghoon</b></sub></a><br />🏠
     </td>
     <td align="center"><a href=https://github.com/sila0319><img src="https://user-images.githubusercontent.com/102000749/165739259-24741b3b-92d2-49df-8496-7dab8f58bd97.png" width="100px;" alt=""/><br /><sub><b>Ryu wonkyu</b></sub></a><br />🏠
     </td>
@@ -37,17 +37,36 @@ Deployment | 배포할 때 쓸 예정 :tada: | -
 ---
 
 ## 개인 작업 진행 순서
-1. 작업 내용에 대한 **Issue를 작성**합니다.  
-2. **Projects**에서 해당 작업의 Issue를 `In progress`로 옮깁니다.  
+1. 작업 내용에 대한 `Issue`를 작성합니다.  
+2. `Projects`에서 해당 작업의 Issue를 `In progress`로 옮깁니다.  
 3. 작성했던 issue 번호를 태깅하여 **branch를 생성**합니다.  
-4. 반드시! `checkout` 명령어를 통해 작업을 진행할 branch로 이동해주세요.  
+4. 반드시! `checkout` 명령어를 통해 **작업을 진행할 branch로 이동**해주세요.  
 5. 작업 전, `develop 브랜치`를 `pull` 받고 시작해주세요!  
 
-:fire: `main 브랜치`에서 수정하지 않도록 주의, **현재 브랜치**를 확인해주세요!  
+:fire: `main 브랜치`에서 수정하지 않도록 주의, **현재 브랜치를 확인**해주세요!  
 :fire: `clone 시`에도 `develop 브랜치`로 설정 --> URL을 복사해주세요!
 
-## Issue 작성법 (작성 예정)
+## Issue 작성법
+- 누가 어떤 작업을 하고있는지를 파악하기 위해 issue를 작성합니다.
+- `issue`를 기반으로 개발을 진행합니다.  
+<img width="100%" src="https://user-images.githubusercontent.com/103083251/170811257-f2436ad4-3126-4395-ba66-aea5133159e9.JPG"/>  
 
+### :pushpin: Issue Convention
+1. issue의 `제목`은 `[Commit Type] 작업 내용 요약` 으로 통일합니다.  
+2. issue의 `내용`에는 브랜치에서 진행할 `간단한 작업 내용`과 `연관된 issue와 PR`을 태그하고, `참조한 문서`를 작성합니다.
+```
+## 작업 내용  
+- [ ] 관련 작업 1  
+- [ ] 관련 작업 2  
+  
+## Related issue, PR  
+- #이슈 번호
+
+## References
+- 해당 작업을 하며 참조한 문서의 URL 첨부
+```
+3. issue 설정: `Assignees(작업자)`와 `Labels`을 설정합니다.
+  
 ## Projects 탭 활용 (작성 예정)
 
 ## Git Branch 전략
@@ -64,8 +83,8 @@ main -- develop -- add/#1     // main - develop - (커밋타입)/#(이슈번호)
 * `'브랜치이름'`에는 작업에 해당하는 `'Commit Type'`을 그대로 사용하시면 됩니다.  
 * `'이슈번호'`에는 작업 전 작성했던 `issue 번호`를 적어주세요.
 
-1. 작업을 진행할 branch를 생성합니다.  
-2. 꼭! `checkout 명령어`를 통해 작업을 진행할 브랜치로 이동해주세요.  
+1. 작업을 진행할 **branch를 생성**합니다.  
+2. 꼭! `checkout 명령어`를 통해 **작업을 진행할 브랜치로 이동**해주세요.  
 3. 작업 전, 반드시 `develop 브랜치`를 `pull` 받고 시작합니다.
 ```
 git branch 브랜치이름/#이슈번호

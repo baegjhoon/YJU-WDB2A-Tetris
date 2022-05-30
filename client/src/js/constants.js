@@ -10,6 +10,10 @@ const MINUS_PER_LEVEL = 80;
 
 const HIDE_CN = 'hide';
 
+
+//개인랭킹
+const NO_OF_HIGH_SCORES = 10;
+
 // 조작키
 const KEY = {
   LEFT: 'ArrowLeft',

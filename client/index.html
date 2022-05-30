@@ -10,19 +10,30 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./src/css/styles.css">
 	<title>Tetris</title>
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
+		integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
 </head>
 
 <body>
 	<div class="container">
 		<!-- user data -->
 		<div id="greeting" class="greeting">
-			<form id="user-form">
-				<div class="mb-3">
-					<label for="user-input" class="form-label">User ID</label>
-					<input type="text" class="form-control" id="user-input">
+			<header>
+				<h1>테트리스</h1>
+			</header>
+				
+			<form id="user-form">	
+				<div class="form-group">
+					<label class="form-label" for="user-input">Login . . . (,, ･∀･)ﾉ゛</label>
+					<input type="text" class="form-control" placeholder="닉네임을 입력해주세요 !" id="user-input">
 				</div>
-				<button type="submit" class="btn btn-primary">Enter</button>
+				<button type="submit" class="bttn">PLAY</button>
 			</form>
+
 		</div>
 
 		<!-- game -->

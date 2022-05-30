@@ -51,15 +51,30 @@ Deployment | 배포할 때 쓸 예정 :tada: | -
 
 ---
 
-## 개인 작업 진행 순서
-1. 작업 내용에 대한 `Issue`를 작성합니다.  
-2. `Projects`에서 해당 작업의 Issue를 `In progress`로 옮깁니다.  
-3. 작성했던 issue 번호를 태깅하여 **branch를 생성**합니다.  
-4. 반드시! `checkout` 명령어를 통해 **작업을 진행할 branch로 이동**해주세요.  
-5. 작업 전, `develop 브랜치`를 `pull` 받고 시작해주세요!  
-
+## 개인 작업 진행 순서  
 :fire: `main 브랜치`에서 수정하지 않도록 주의, **현재 브랜치를 확인**해주세요!  
-:fire: `clone 시`에도 `develop 브랜치`로 설정 --> URL을 복사해주세요!
+:fire: `develop 브랜치`가 최신이니, `clone 시` `아래 명령어`를 사용해서 clone 하시고 작업하시면 됩니다!!  
+```
+git clone -b develop https://github.com/baegjhoon/YJU-WDB2A-Tetris.git
+```  
+😆 | `작업 전에 할 일`  ⭐️ 작업 별로 링크를 걸어두었으니 참고해 주세요 ⭐️
+:--:|:--
+1 | 작업 내용에 대한 [`Issue`를 작성](#issue-작성법) 합니다.  
+2 | [`Projects`](#projects-탭-활용)에서 해당 작업의 Issue를 `In progress`로 옮깁니다.  
+3 | 작성했던 issue 번호를 태깅하여 [`branch를 생성`](#issue-번호를-태깅하여-branch-생성) 합니다.  
+4 | 반드시! [`checkout` 명령어](#issue-번호를-태깅하여-branch-생성)를 통해 **작업을 진행할 branch로 이동**해주세요.  
+5 | 작업 전, [`develop 브랜치`를 `pull`](#issue-번호를-태깅하여-branch-생성) 받고 시작해주세요!  
+  
+👏 | `작업을 다했다면 !`
+:--:|:--
+1 | `push 전에` 정상적으로 작동하는지, 눈에 보이는 오류는 없는지 확인합니다.
+2 | `git add . ` <- 명령어로 모든 변경사항을 add 합니다.
+3 | [`git commit -m "[Type] 작업 내용에 대한 요약 #(issue번호)" `](#pushpin-commit-convention) <- 명령어로 commit 합니다.
+4 | `git push -u origin (브랜치이름) ` <- 명령어로 github에 push 합니다.
+5 | 파일이 정상적으로 들어갔는지 확인 -> PR양식에 맞춰 Pull requests (작성 예정)
+6 | (issue PR태그, 작성 예정)
+
+
 <br>  
 
 ## Issue 작성법

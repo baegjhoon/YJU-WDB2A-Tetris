@@ -405,7 +405,7 @@ function showHighScores() {
   const highScoreList = document.getElementById('highScores');
 
   highScoreList.innerHTML = highScores
-    .map((score) => `<li>${score.score} - ${score.name}`)
+    .map((score) => `<li>${score.score + "점"} :) ${score.name}`)
     .join('');
 }
 

@@ -7,13 +7,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./src/css/styles.css">
-	<title>Tetris</title>
+	<title>1조:Tetris</title>
 
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
-		integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
 </head>
@@ -23,7 +22,10 @@
 		<!-- user data -->
 		<div id="greeting" class="greeting">
 			<header>
-				<h1>테트리스</h1>
+				<div class="greetingHeader">
+					<img src="https://user-images.githubusercontent.com/103083251/171980517-a15365ba-c86b-4259-b86b-fdc48d4cb772.png" alt="TETRIS로고">
+					<!-- <h1>테트리스</h1> -->
+				</div>
 			</header>
 				
 			<form id="user-form">	
@@ -33,17 +35,20 @@
 				</div>
 				<button type="submit" class="bttn">PLAY</button>
 			</form>
-
 		</div>
 
 		<!-- game -->
 		<div id="main" class="main hide">
+			<header>
+				<div class="mainHeader">
+					<img src="https://user-images.githubusercontent.com/103083251/171928798-db793260-2397-4a8d-8ff7-3b29b5f4b210.png" alt="로고" width="10%" height="10%">
+				</div>
+			</header>
 			<div class="main__games">
 				<div class="grid">
 					<canvas id="board" class="game-board"></canvas>
 					<div class="right-column">
 						<div>
-							<h1>tetris</h1>
 							<p>Score: <span id="score"></span></p>
 							<p>Lines: <span id="lines"></span></p>
 							<p>Level: <span id="level"></span></p>
@@ -55,16 +60,20 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="highscore">
+					<!-- 점수 추가 -->
+					<h2>최고 점수<br></h2>
+					<ol id="highScores"></ol>
+				</div>
+
 				<div class="user-list-wrapper">
-					<h3>참가자</h3>
+					<h2>참가자</h2>
 					<ul id="user-list" class="user-list"></ul>
 				</div>
 			</div>
 			<!-- user-list -->
 			<div id="board-list" class="board-list"></div>
-			<!-- 점수 추가 -->
-			<h2>HIGH SCORES</h2>
-			<ol id="highScores"></ol>
 		</div>
 	</div>
 	<!-- SRI Hash -->

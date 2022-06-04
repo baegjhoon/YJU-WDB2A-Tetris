@@ -34,9 +34,17 @@
     [1.6. git Branch 전략 ](#git-branch-전략)  
     [1.7. Issue 번호를 태깅하여 Branch 생성 ](#issue-번호를-태깅하여-branch-생성)  
     [1.8. PR Convention ](#pushpin-pr-convention)  
-    
-[2. TETRIS : 테트리스 ](#tetris-테트리스)  
-  > 
+  
+[2. TETRIS : 테트리스 ](#tetris--테트리스)  
+  > [2.1. How to PLAY ](#how-to-play)  
+    [2.2. 조작법 ](#조작법)  
+    [2.3. Develop ](#develop)  
+    [2.4. 패치 노트 ](#패치-노트)  
+    [2.5. 스크린샷 ](#스크린샷)  
+  
+[3. etc ](#etc)
+  > [3.1. 기술 스택 ](#기술-스택)  
+    [3.2. Reference ](#reference)  
 
 <br>  
 
@@ -149,7 +157,7 @@ git pull origin develop
 <img width="100%" src="https://user-images.githubusercontent.com/103083251/171991926-a07ee531-fc5b-4eb5-921a-e9f3f516bc93.jpg"/>  
 <br>  
 
-🦭 | `Pull request 순서 !`
+:satisfied: | `Pull request 순서 !`
 :--:|:--
 1 | `base: main`에서 -> `base: develop`로 변경합니다.
 2 | `compare: (본인이 작업한 브랜치)`가 맞는지 확인 -> 아니라면 변경해줍니다.
@@ -177,11 +185,42 @@ git pull origin develop
 
 # TETRIS : 테트리스  
 <img width="80%" height="80%" src="https://user-images.githubusercontent.com/103083251/172001960-004b0581-79e8-4b5b-9f9d-3b12c1999c61.png"/>  
+테트리스는 1984년, 소련의 프로그래머 '알렉세이 파지노프'가 만든 고전 퍼즐 게임입니다.  
+
+게임의 룰은 간단합니다. 블록을 쌓으면서 한 줄이 꽉 채워지면 그 줄은 사라지고 점수를 얻습니다. 이런 식으로 블록이 맨 위까지 쌓이지 않도록 버티는 게임입니다.  
 
 <br>  
 
 ## How to PLAY  
-(플레이 링크와 조작법 작성 예정)  
+- [**Click to PLAY**](https://yju-tetris-project.herokuapp.com/)  
+[`https://yju-tetris-project.herokuapp.com/`](https://yju-tetris-project.herokuapp.com/)  
+  
+1. `닉네임` 입력 후 `PLAY` 버튼을 눌러주세요.  
+2. `준비` 버튼을 눌러주세요. (멀티 플레이 시, 모두가 `준비`가 되어야만 게임이 시작됩니다.)  
+3. 게임이 시작되면 블록이 내려옵니다.  그럼 게임을 즐겨주세요! :laughing:  
+* [**조작법** (클릭!)](#조작법)
+* 한 줄을 완성하면 점수를 얻습니다.  
+* 블록이 맨 위까지 쌓이면 게임이 끝납니다.  
+* `Level`이 오를수록 속도가 빨라집니다.  
+  
+:fire: 게임 도중엔 `나가기`가 불가능합니다.  
+:fire: 게임이 진행되고 있으면 로그인(난입)이 불가능합니다.  
+:fire: `최고 점수`는 `인터넷 기록`을 지우면 초기화됩니다.  
+
+<br>  
+
+### 조작법  
+* `←`, `→` 방향키: 블록 이동  
+* `↑` 방향키 : 블록 회전  
+* `↓` 방향키 : 소프트 드롭 (블록 빠르게 내려오기)  
+* `Spacebar` : 하드 드롭 (블록 떨어뜨리기)  
+* `P` : 일시정지  
+
+<br>  
+
+### Develop  
+- `npm install`  
+- `node server`  
 
 <br>  
 

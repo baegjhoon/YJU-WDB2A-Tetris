@@ -1,3 +1,6 @@
+//개인랭킹호출
+showHighScores();
+
 // Socket
 const socket = io();
 
@@ -232,6 +235,8 @@ function gameOver() {
 
   account.status = STATUS.GAMEOVER;
   account.ready = false;
+  //개인랭킹체크
+  checkHighScore(account.score);
   clearTime();
   emitUpdateBoard();
   emitGameOver();
@@ -358,7 +363,10 @@ function ready() {
 }
 
 function leave() {
-  if (account.status === STATUS.PLAYING) return;
+  if (account.status === STATUS.PLAYING) {
+    alert('게임 중에는 나가실 수 없습니다.');
+    return;
+  }
 
   setupGame();
   socket.emit('user-leave', {
@@ -389,3 +397,35 @@ function emitGameOver() {
     account,
   });
 }
+
+
+//개인랭킹
+function showHighScores() {
+  const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+  const highScoreList = document.getElementById('highScores');
+
+  highScoreList.innerHTML = highScores
+    .map((score) => `<li>${score.score + "점"} :) ${score.name}`)
+    .join('');
+}
+
+function checkHighScore(score) {
+  const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+  const lowestScore = highScores[highScores.length - 1]?.score ?? 0;
+
+  if (score > lowestScore || highScores.length < NO_OF_HIGH_SCORES) {
+    const name = prompt('You got a highscore! Enter name:');
+    const newScore = { score, name };
+    saveHighScore(newScore, highScores);
+    showHighScores();
+  }
+}
+
+function saveHighScore(score, highScores) {
+  highScores.push(score);
+  highScores.sort((a, b) => b.score - a.score);
+  highScores.splice(NO_OF_HIGH_SCORES);
+
+  localStorage.setItem('highScores', JSON.stringify(highScores));
+}
+

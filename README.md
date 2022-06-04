@@ -1,5 +1,7 @@
-# YJU-WDB2A-Tetris
-👋 영진전문대학교 2WDB-A반 1조 미니프로젝트 :: Tetris  
+# YJU WDB2A반 1조 미니 프로젝트 :: Tetris
+#### 👋 영진전문대학교 2학년 WD-A반 1조(hongzo) @ 첫번째 팀 프로젝트  
+**테트리스 구현**을 목표로 만들어진 repository입니다. 더불어 **git/github 활용법에 대한 스터디**를 겸하고 있습니다.
+
 <br>
 
 ## 조원
@@ -9,7 +11,7 @@
     </td>
     <td align="center"><a href=https://github.com/ooyniz><img src="https://user-images.githubusercontent.com/83005178/166416247-3908c2e9-ed1c-4e44-aa6a-68f3db0f45db.png" width="100px;" alt=""/><br /><sub><b>Kwak Yujin</b></sub></a><br />🏠
     </td>
-    <td align="center"><a href=https://github.com/baegjhoon><img src="https://user-images.githubusercontent.com/102000749/165739357-9ea66cf1-8a6e-4b9a-bf77-0a8c9e1a465a.png" width="100px;" alt=""/><br /><sub><b>Baeg Junghun</b></sub></a><br />🏠
+    <td align="center"><a href=https://github.com/baegjhoon><img src="https://user-images.githubusercontent.com/102000749/165739357-9ea66cf1-8a6e-4b9a-bf77-0a8c9e1a465a.png" width="100px;" alt=""/><br /><sub><b>Baeg Junghoon</b></sub></a><br />🏠
     </td>
     <td align="center"><a href=https://github.com/sila0319><img src="https://user-images.githubusercontent.com/102000749/165739259-24741b3b-92d2-49df-8496-7dab8f58bd97.png" width="100px;" alt=""/><br /><sub><b>Ryu wonkyu</b></sub></a><br />🏠
     </td>
@@ -20,30 +22,168 @@
 
 ---
 
-## :pushpin: commit 규칙
-- add : 기능 추가 시
-   ```
-   git commit -m "[add] 난이도 기능 추가"
-   ```
-- fix : 버그 수정
-   ```
-   git commit -m "[fix] 블록이 회전하지 않던 문제 해결"
-   ```
-- update : 문서 업데이트 시
-   ```
-   git commit -m "[update] Readme.md OOO 추가"
-   ```
-- deployment : 배포할 때 쓸 예정
+# 🔍 목차  
+[1. Github 관리 전략 ](#github-관리-전략)  
+  > [1.1. Commit Convention ](#pushpin-commit-convention)  
+    [1.2. 개인 작업 진행 순서 ](#개인-작업-진행-순서)  
+    [1.3. Issue 작성법 ](#issue-작성법)  
+    [1.4. Issue Convention ](#pushpin-issue-convention)  
+    [1.5. Projects 탭 활용 ](#projects-탭-활용)  
+    [1.6. git Branch 전략 ](#git-branch-전략)  
+    [1.7. Issue 번호를 태깅하여 Branch 생성 ](#issue-번호를-태깅하여-branch-생성)  
+    [1.8. PR Convention (작성예정)](#pushpin-pr-규칙-작성-예정)  
+    
+[2. TETRIS : 테트리스 ](#tetris-테트리스)  
 
-<!-- 사용 안함
-- chore : 간단한 코드 수정, 오타 수정
-   ```
-   git commit -m "[chore] 오타 수정"
-   ```
--->
+<br>  
 
-## :pushpin: PR 규칙
+# Github 관리 전략
+
+## :pushpin: Commit Convention
+[Type] | 설명 | 예시
+:--:|:--:|:--:
+Add | 기능 추가 :heavy_plus_sign: | "[Add] 난이도 기능 추가"
+Fix | 버그 수정 :bug: | "[Fix] 블록이 회전하지 않던 문제 해결"
+Chore | 간단한 코드 ・ 오타 수정 :zap: | "[Chore] 주석 오타 수정"
+Update | 문서 업데이트 :pencil2: | "[Update] README.md OOO 추가"
+Design | UI 디자인 변경 (CSS) :art: | "[Design] 로그인 버튼 UI 수정"
+Deployment | 배포할 때 쓸 예정 :tada: | -  
+
+---
+
+## 개인 작업 진행 순서  
+:fire: `main 브랜치`에서 수정하지 않도록 주의, **현재 브랜치를 확인**해주세요!  
+:fire: `develop 브랜치`가 최신이니, `clone 시` `아래 명령어`를 사용해서 clone 하시고 작업하시면 됩니다!!  
+```
+git clone -b develop https://github.com/baegjhoon/YJU-WDB2A-Tetris.git
+```  
+😆 | `작업 전에 할 일`  ⭐️ 작업 별로 링크를 걸어두었으니 참고해 주세요 ⭐️
+:--:|:--
+1 | 작업 내용에 대한 [`Issue`를 작성](#issue-작성법) 합니다.  
+2 | [`Projects`](#projects-탭-활용)에서 해당 작업의 Issue를 `In progress`로 옮깁니다.  
+3 | 작성했던 issue 번호를 태깅하여 [`branch를 생성`](#issue-번호를-태깅하여-branch-생성) 합니다.  
+4 | 반드시! [`checkout` 명령어](#issue-번호를-태깅하여-branch-생성)를 통해 **작업을 진행할 branch로 이동**해주세요.  
+5 | 작업 전, [`develop 브랜치`를 `pull`](#issue-번호를-태깅하여-branch-생성) 받고 시작해주세요!  
+  
+👏 | `작업을 다했다면 !`
+:--:|:--
+1 | `push 전에` 정상적으로 작동하는지, 눈에 보이는 오류는 없는지 확인합니다.
+2 | `git add . ` <- 명령어로 모든 변경사항을 add 합니다.
+3 | [`git commit -m "[Type] 작업 내용에 대한 요약 #(issue번호)" `](#pushpin-commit-convention) <- 명령어로 commit 합니다.
+4 | `git push -u origin (브랜치이름) ` <- 명령어로 github에 push 합니다.
+5 | 파일이 정상적으로 들어갔는지 확인 -> PR양식에 맞춰 Pull requests (작성 예정)
+6 | (issue PR태그, 작성 예정)
+
+
+<br>  
+
+## Issue 작성법
+- 누가 어떤 작업을 하고있는지를 파악하기 위해 issue를 작성합니다.
+- `issue`를 기반으로 개발을 진행합니다.  
+<img width="100%" src="https://user-images.githubusercontent.com/103083251/170811257-f2436ad4-3126-4395-ba66-aea5133159e9.JPG"/>  
+
+### :pushpin: Issue Convention
+1. issue의 `제목`은 `[Commit Type] 작업 내용 요약` 으로 통일합니다.  
+2. issue의 `내용`에는 브랜치에서 진행할 `간단한 작업 내용`과 `연관된 issue와 PR`을 태그하고, `참조한 문서`를 작성합니다.
+```
+## 작업 내용  
+- [ ] 관련 작업 1  
+- [ ] 관련 작업 2  
+  
+## Related issue, PR  
+- #이슈 번호
+
+## References
+- 해당 작업을 하며 참조한 문서의 URL 첨부
+```
+3. issue 설정: `Assignees(작업자)`와 `Labels`을 설정합니다.
+<br>  
+
+## Projects 탭 활용  
+<img width="100%" src="https://user-images.githubusercontent.com/103083251/170812937-d22dee25-36e7-4f2a-8e10-f46039dbdf4a.png"/>  
+
+- `To do` : 할 일  
+- `In progress` : 진행 중인 일  
+- `Done` : 완료된 Issue  
+  
+1. `+`를 눌러 `#이슈 번호`를 검색하여 Issue를 추가할 수 있습니다.  
+2. Issue를 추가하면 사진과 같은 `블록`이 생깁니다.  
+3. (스크래치 처럼) 마우스로 잡아서 해당하는 `작업 진행 영역`에 가져다 놓으면 됩니다.  
+4. `Issue 단위의 작업`을 완료했다면 Done에 놓아주세요!
+<br>  
+
+## Git Branch 전략
+```
+main -- develop -- add/#1     // main - develop - (커밋타입)/#(이슈번호)
+                \_ add/#2     // 구조로 이루어져 있습니다.
+```
+* 모든 작업은 **각자의 branch에서** 이루어집니다.  
+* 자신의 branch가 맞는지 매번 꼭 확인해 주세요!
+  
+  
+## Issue 번호를 태깅하여 Branch 생성
+* 작업 전, 항상 작업 내용에 대한 `issue를 작성`해주세요.  
+* `'브랜치이름'`에는 작업에 해당하는 `'Commit Type'`을 그대로 사용하시면 됩니다.  
+* `'이슈번호'`에는 작업 전 작성했던 `issue 번호`를 적어주세요.
+
+1. 작업을 진행할 **branch를 생성**합니다.  
+2. 꼭! `checkout 명령어`를 통해 **작업을 진행할 브랜치로 이동**해주세요.  
+3. 작업 전, 반드시 `develop 브랜치`를 `pull` 받고 시작합니다.
+```
+git branch 브랜치이름/#이슈번호
+
+git checkout 브랜치이름
+
+git pull origin develop
+```
+
+
+## :pushpin: PR 규칙 (작성 예정)  
 - 
 
-## :pushpin: 참고사항
-- 
+<br>
+
+---
+
+# TETRIS : 테트리스  
+(테트리스 사진 첨부)  
+(설명 작성 예정)  
+
+<br>  
+
+## How to PLAY  
+(플레이 링크와 조작법 작성 예정)  
+
+<br>  
+
+## 패치 노트  
+(구현된 기능들을 차례대로 작성할 예정)
+
+<br>  
+
+## 스크린샷  
+(로그인 화면 & 플레이 화면 사진 첨부)  
+
+<br>  
+
+---
+
+# etc  
+
+## 팀원 역할  
+
+<br>  
+
+## 기술 스택  
+(js, css, node.js, heroku, 등등)  
+(js 채택 이유 기술할 예정 - 브레인스토밍과 연계하여 js 이점 작성)  
+
+<br>
+
+## 소스 코드  
+(각 파일들을 하이퍼링크로 작성할 예정)  
+
+<br>
+
+## Reference  
+(스터디에 참조한 글들의 링크 작성)  

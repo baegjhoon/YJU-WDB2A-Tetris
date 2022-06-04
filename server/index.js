@@ -10,6 +10,8 @@ const io = new Server(server);
 
 const users = [];
 
+const port = process.env.PORT || 3000;//heroku port
+
 let isPlaying = false;
 
 app.use(express.static(path.join(__dirname, '../client')));
@@ -107,7 +109,7 @@ io.on('connection', socket => {
 });
 
 //port
-server.listen(3000, () => {
+server.listen(port, () => {
   console.log('listening on *:3000');
 });
 

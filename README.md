@@ -262,7 +262,7 @@ git pull origin develop
 
 7. 서버 -> 멀티 플레이 구현  
 <img width="253" alt="참가자list" src="https://user-images.githubusercontent.com/103083251/172019420-731bb618-7033-46a1-82a9-81b6ae9c5cf2.png">  
-<img alt="멀티플레이" src="https://user-images.githubusercontent.com/103083251/172019854-8b56fee6-fbc2-4b2f-8ebf-66009f079c3c.gif">  
+<img width="30%" height="30%" alt="멀티플레이" src="https://user-images.githubusercontent.com/103083251/172019854-8b56fee6-fbc2-4b2f-8ebf-66009f079c3c.gif">  
 
 <br>  
 

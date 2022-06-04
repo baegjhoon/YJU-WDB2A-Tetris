@@ -195,10 +195,12 @@ git pull origin develop
 - [**Click to PLAY**](https://yju-tetris-project.herokuapp.com/)  
 [`https://yju-tetris-project.herokuapp.com/`](https://yju-tetris-project.herokuapp.com/)  
   
+**(전체화면을 권장합니다.)**   
 1. `닉네임` 입력 후 `PLAY` 버튼을 눌러주세요.  
 2. `준비` 버튼을 눌러주세요. (멀티 플레이 시, 모두가 `준비`가 되어야만 게임이 시작됩니다.)  
 3. 게임이 시작되면 블록이 내려옵니다.  그럼 게임을 즐겨주세요! :laughing:  
-* [**조작법** (클릭!)](#조작법)
+> * [**조작법** (클릭 !)](#조작법)  
+> * [스크린샷 보실래요? (클릭 !)](#스크린샷)  
 * 한 줄을 완성하면 점수를 얻습니다.  
 * 블록이 맨 위까지 쌓이면 게임이 끝납니다.  
 * `Level`이 오를수록 속도가 빨라집니다.  
@@ -230,7 +232,17 @@ git pull origin develop
 <br>  
 
 ## 스크린샷  
-(로그인 화면 & 플레이 화면 사진 첨부)  
+- 첫 화면 : 로그인 창  
+<img width="1102" alt="스샷 1" src="https://user-images.githubusercontent.com/103083251/172010656-843b810a-45bd-4579-86c3-f23c562c4e73.png">  
+  
+- 닉네임 입력  
+<img width="870" alt="스샷 2" src="https://user-images.githubusercontent.com/103083251/172010820-855bc237-41c0-44f9-899a-0691efa44817.png">  
+  
+- 게임 페이지  
+<img width="1440" alt="스샷 3" src="https://user-images.githubusercontent.com/103083251/172010832-629941f8-53e0-40fa-abaf-f06fcbd67e3a.png">  
+  
+- 플레이 사진
+<img width="1440" alt="스샷 4" src="https://user-images.githubusercontent.com/103083251/172010870-c488b901-ad86-4daf-be2b-d61c64387b6c.png">  
 
 <br>  
 
@@ -243,7 +255,15 @@ git pull origin develop
 <br>  -->
 
 ## 기술 스택  
-(js, css, node.js, heroku, 등등)   
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/photoshop-31A8FF?style=for-the-badge&logo=photoshop&logoColor=white">
+<img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
+<img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
+<img src="https://img.shields.io/badge/socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white">
+<img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white">
+<img src="https://img.shields.io/badge/Heroku-430098?style=flat-square&logo=Heroku&logoColor=white">
 
 <br>
 
@@ -251,4 +271,11 @@ git pull origin develop
 (각 파일들을 하이퍼링크로 작성할 예정)  -->
 
 ## Reference  
-(스터디에 참조한 글들의 링크 작성)  
+- [TOAST UI : 모던 자바스크립트로 테트리스 만들기](https://ui.toast.com/weekly-pick/ko_20191216)  
+- [자바스크립트와 이벤트 루프](https://meetup.toast.com/posts/89)  
+- [Github : js-tetris](https://github.com/melcor76/js-tetris)  
+- [Youtube : CSS 버튼 마우스오버 효과 만들기](https://www.youtube.com/watch?v=jxslBFkse2w)  
+- [Bootstrap](http://bootstrapk.com/getting-started/)  
+- [CODEPEN](https://codepen.io/)  
+- [Socket.io](https://socket.io/docs/v4/)  
+- [Express](https://expressjs.com/ko/4x/api.html)  

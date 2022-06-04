@@ -1,5 +1,5 @@
 # YJU WDB2A반 1조 미니 프로젝트 :: Tetris  
-<img width="100%" src="https://user-images.githubusercontent.com/103083251/171994777-a09313b6-40ef-419d-9eb6-ea0d0cf18e1b.png">  
+<img width="100%" height="100%" src="https://user-images.githubusercontent.com/103083251/171994777-a09313b6-40ef-419d-9eb6-ea0d0cf18e1b.png">  
 
 #### 👋 영진전문대학교 2학년 WD-A반 1조(hongzo) @ 첫번째 팀 프로젝트  
 **테트리스 구현**을 목표로 만들어진 repository입니다. 더불어 **git/github 활용법에 대한 스터디**를 겸하고 있습니다.
@@ -36,6 +36,7 @@
     [1.8. PR Convention ](#pushpin-pr-convention)  
     
 [2. TETRIS : 테트리스 ](#tetris-테트리스)  
+  > 
 
 <br>  
 
@@ -175,8 +176,7 @@ git pull origin develop
 ---
 
 # TETRIS : 테트리스  
-(테트리스 사진 첨부)  
-(설명 작성 예정)  
+<img width="80%" height="80%" src="https://user-images.githubusercontent.com/103083251/172001960-004b0581-79e8-4b5b-9f9d-3b12c1999c61.png"/>  
 
 <br>  
 
@@ -199,20 +199,17 @@ git pull origin develop
 
 # etc  
 
-## 팀원 역할  
+<!--## 팀원 역할  
 
-<br>  
+<br>  -->
 
 ## 기술 스택  
-(js, css, node.js, heroku, 등등)  
-(js 채택 이유 기술할 예정 - 브레인스토밍과 연계하여 js 이점 작성)  
+(js, css, node.js, heroku, 등등)   
 
 <br>
 
-## 소스 코드  
-(각 파일들을 하이퍼링크로 작성할 예정)  
-
-<br>
+<!-- ## 소스 코드  
+(각 파일들을 하이퍼링크로 작성할 예정)  -->
 
 ## Reference  
 (스터디에 참조한 글들의 링크 작성)  

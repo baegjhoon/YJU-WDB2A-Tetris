@@ -227,7 +227,43 @@ git pull origin develop
 <br>  
 
 ## 패치 노트  
-(구현된 기능들을 차례대로 작성할 예정)
+1. 기본적인 테트리스 구현 (초기 버전)  
+<img width="960" alt="초기_로그인" src="https://user-images.githubusercontent.com/103083251/172014443-705fe9eb-124b-49d5-8174-107fc3c155d1.png">  
+<br>  
+
+2. 게임 난이도 상승 구현  
+<img alt="난이도상승 구현" src="https://user-images.githubusercontent.com/103083251/172016085-8cb77764-edf0-4a60-951b-0663c188d218.gif">
+<br>  
+
+3. '게임 중 나가기 금지' 기능 추가  
+<img alt="나가기금지" src="https://user-images.githubusercontent.com/103083251/172016550-18542b0c-9075-4df0-8675-eeafa1fc752b.gif">  
+<br>  
+
+4. 로그인 창 UI 업데이트  
+<img width="952" alt="초기 로고 디자인" src="https://user-images.githubusercontent.com/103083251/172016956-2e2b4bf8-38bf-48bc-91b9-48aa850e7181.png">  
+  
+- 닉네임 입력창, PLAY버튼 마우스 오버 효과
+<img alt="초기 닉네임 버튼" src="https://user-images.githubusercontent.com/103083251/172017175-fcadc0d4-9e66-4b3f-8c57-e66cf65561ec.gif">  
+<br>  
+
+5. '개인 기록' 기능 추가  
+<img alt="개인기록 기능" src="https://user-images.githubusercontent.com/103083251/172017440-862e5d78-afeb-4d7a-9b82-f19e6d30b07b.gif">  
+<br>  
+
+6. 로고 수정, 게임 페이지 UI 업데이트  
+<img width="720" alt="테트리스_로고변경" src="https://user-images.githubusercontent.com/103083251/172017593-76bd9376-2e03-421f-97bd-77af6c257c82.png">  
+  
+- 로그인 박스 효과 수정  
+<img alt="로그인창 변경" src="https://user-images.githubusercontent.com/103083251/172017767-3b7c71a8-e855-4b67-a8ff-f928e47dc853.gif">  
+  
+- 게임 페이지 UI 수정  
+<img alt="게임 페이지 UI 수정" src="https://user-images.githubusercontent.com/103083251/172018091-c084a6ae-e552-4f7e-be31-844e369a2998.gif">  
+<br>  
+
+7. 서버 -> 멀티 플레이 구현  
+<img alt="멀티 서버 구현" src="https://user-images.githubusercontent.com/103083251/172019193-d950b571-b0c3-4e46-ac29-59cf6df7aa55.mov">  
+<img width="253" alt="참가자list" src="https://user-images.githubusercontent.com/103083251/172019420-731bb618-7033-46a1-82a9-81b6ae9c5cf2.png">  
+<img alt="멀티플레이" src="https://user-images.githubusercontent.com/103083251/172019854-8b56fee6-fbc2-4b2f-8ebf-66009f079c3c.gif">  
 
 <br>  
 

@@ -1,4 +1,6 @@
-# YJU WDB2A반 1조 미니 프로젝트 :: Tetris
+# YJU WDB2A반 1조 미니 프로젝트 :: Tetris  
+<img width="100%" src="https://user-images.githubusercontent.com/103083251/171994777-a09313b6-40ef-419d-9eb6-ea0d0cf18e1b.png">  
+
 #### 👋 영진전문대학교 2학년 WD-A반 1조(hongzo) @ 첫번째 팀 프로젝트  
 **테트리스 구현**을 목표로 만들어진 repository입니다. 더불어 **git/github 활용법에 대한 스터디**를 겸하고 있습니다.
 
@@ -31,7 +33,7 @@
     [1.5. Projects 탭 활용 ](#projects-탭-활용)  
     [1.6. git Branch 전략 ](#git-branch-전략)  
     [1.7. Issue 번호를 태깅하여 Branch 생성 ](#issue-번호를-태깅하여-branch-생성)  
-    [1.8. PR Convention (작성예정)](#pushpin-pr-규칙-작성-예정)  
+    [1.8. PR Convention ](#pushpin-pr-convention)  
     
 [2. TETRIS : 테트리스 ](#tetris-테트리스)  
 
@@ -72,7 +74,7 @@ git clone -b develop https://github.com/baegjhoon/YJU-WDB2A-Tetris.git
 3 | [`git commit -m "[Type] 작업 내용에 대한 요약 #(issue번호)" `](#pushpin-commit-convention) <- 명령어로 commit 합니다.
 4 | `git push -u origin (브랜치이름) ` <- 명령어로 github에 push 합니다.
 5 | 파일이 정상적으로 해당 branch에 들어갔는지 확인 -> [`PR양식에 맞춰 Pull requests`](#pushpin-pr-convention) 합니다.
-6 | (issue PR태그, 작성 예정)
+6 | PR 후 카톡 남겨주시면 확인 후 merge 하겠습니다!
 
 
 <br>  
@@ -139,23 +141,24 @@ git pull origin develop
 
 
 ## :pushpin: PR Convention  
-:fire: 반드시! `base 브랜치`를 `develop`로 바꿔주세요.  
+:fire: 반드시! `base 브랜치`를 `develop`로 설정해주세요.  
 :fire: `compare 브랜치`가 `자신이 작업한 branch`가 맞는지 확인해주세요.  
 <img width="70%" height="70%" src="https://user-images.githubusercontent.com/103083251/171990678-7ca28b54-93bf-4048-84d5-b6d1e7e0b790.jpg"/>  
 <br>  
 <img width="100%" src="https://user-images.githubusercontent.com/103083251/171991926-a07ee531-fc5b-4eb5-921a-e9f3f516bc93.jpg"/>  
 <br>  
 
-🦭 | `Pull request 순서`
+🦭 | `Pull request 순서 !`
 :--:|:--
 1 | `base: main`에서 -> `base: develop`로 변경합니다.
 2 | `compare: (본인이 작업한 브랜치)`가 맞는지 확인 -> 아니라면 변경해줍니다.
 3 | 작업한 파일이 정확하게 들어갔는지 확인합니다.
 4 | `PR 제목`은 `Issue 제목`과 동일하게 작성합니다.
-5 | `아래 양식`을 복사해서 내용을 작성합니다.
+5 | [`아래 양식`](#pull-request-작성-양식)을 복사해서 내용을 작성합니다.
 6 | `Reviewer(선택)`, `Assignees`, `Labels`를 설정합니다. [(Issue 때와 동일)](#issue-작성법)
 7 | 마지막으로 확인 후 `Create pull request`를 클릭하면 PR 완료! 고생하셨습니다 👏
-  
+ 
+### Pull request 작성 양식
 ```
 ## 작업 내용
 -  #issue번호
@@ -166,8 +169,6 @@ git pull origin develop
 
 - Resolved: #issue번호
 ```
-
-
 
 <br>
 
